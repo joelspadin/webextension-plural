@@ -1,0 +1,22 @@
+{
+  "name": "@spadin/webextension-plural",
+  "version": "1.0.0",
+  "description": "Localize plurals using browser.i18n and plurals-cldr",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "relink": "npm link @spadin/tsconfig"
+  },
+  "author": "Joel Spadin <joelspadin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "plurals-cldr": "^1.0.3"
+  },
+  "devDependencies": {
+    "@spadin/tsconfig": "^1.0.0",
+    "typescript": "^3.3.3",
+    "webextension-polyfill-ts": "^0.8.9"
+  }
+}
