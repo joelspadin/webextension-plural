@@ -1,6 +1,6 @@
 {
   "name": "@spadin/webextension-plural",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Localize plurals using browser.i18n and plurals-cldr",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "relink": "npm link @spadin/tsconfig"
   },
   "author": "Joel Spadin <joelspadin@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/ChaosinaCan/webextension-plural",
   "dependencies": {
     "plurals-cldr": "^1.0.3"
