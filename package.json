@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@spadin/tsconfig": "^1.0.0",
+    "@types/plurals-cldr": "^1.0.0",
     "typescript": "^3.3.3",
     "webextension-polyfill-ts": "^0.8.9"
   }
