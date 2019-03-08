@@ -54,7 +54,7 @@ function getOptions(options?: PluralOptions) {
     };
 }
 
-function getStrings(message: string, substitutions: any[], separator: string) {
+function getStrings(message: string, substitutions: any | any[], separator: string) {
     return browser.i18n.getMessage(message, substitutions).split(separator);
 }
 
