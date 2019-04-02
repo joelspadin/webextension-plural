@@ -1,12 +1,12 @@
 import { browser } from 'webextension-polyfill-ts';
-import _plural from 'plurals-cldr';
+import * as _plural from 'plurals-cldr';
 
 export interface PluralOptions {
     /**
      * A string or list of strings to insert into the message.
      * If omitted, `value` is passed as the only substitution parameter.
      */
-    substitutions?: any | any[];
+    substitutions?: any | readonly any[];
 
     /**
      * Set to `true` to use cardinal forms (1st, 2nd, 3rd, ...) instead of
@@ -54,7 +54,7 @@ function getOptions(options?: PluralOptions) {
     };
 }
 
-function getStrings(message: string, substitutions: any | any[], separator: string) {
+function getStrings(message: string, substitutions: any | readonly any[], separator: string) {
     return browser.i18n.getMessage(message, substitutions).split(separator);
 }
 
