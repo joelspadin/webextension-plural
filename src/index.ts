@@ -1,5 +1,5 @@
-import { browser } from 'webextension-polyfill-ts';
 import * as _plural from 'plurals-cldr';
+import { browser } from 'webextension-polyfill-ts';
 
 export interface PluralOptions {
     /**
@@ -47,9 +47,9 @@ export default function plural(message: string, value: number | string, options?
 
 function getOptions(options?: PluralOptions) {
     return {
-        substitutions: undefined,
         ordinal: false,
         separator: '|',
+        substitutions: undefined,
         ...options,
     };
 }
