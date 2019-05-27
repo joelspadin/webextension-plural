@@ -31,7 +31,7 @@ export interface PluralOptions {
  * @param value A number to determine which plural form to use.
  * @param options Optional configuration.
  */
-export default function plural(message: string, value: number | string, options?: PluralOptions) {
+export function plural(message: string, value: number | string, options?: PluralOptions) {
     const { substitutions, ordinal, separator } = getOptions(options);
 
     const strings = getStrings(message, substitutions || [value], separator);
@@ -44,6 +44,8 @@ export default function plural(message: string, value: number | string, options?
         return strings[0];
     }
 }
+
+export default plural;
 
 function getOptions(options?: PluralOptions) {
     return {
